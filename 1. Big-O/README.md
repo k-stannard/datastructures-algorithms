@@ -51,7 +51,7 @@ The best trade-off is to increase the space and lower the time.
 ### O(1) - Constant Time
 As input gets very large, runtime stays the same.
 
-```
+```swift
 func add(_ num1: Int, _ num2: Int) -> Int {
   let sum = num1 + num2
   return sum
@@ -70,11 +70,32 @@ It takes 4 steps of 16 to get to 1.
 The algorithm is halving to get where it needs to be.
 16 / 2 = 8 / 2 = 4 / 2 = 2 / 2 = 1
 
+```swift
+var j = 1
+while j < n {
+  j *= 2
+}
+```
 Data structures using O(log n)
 - Balanced binary search tree
 
 ### O(n) - Linear Time
-Most common runtime.
+Linear complexity can be identified by the fact that the number of operations increases linearly with the size of the input. If an operation has to run 100 times for a list of 100 items, then it has linear time complexity.
+For-loops are a great example of linear runtime. 
+
+```swift
+let n = [1, 2, 3, 4, 5, 6]
+func printArray(_ array: [Int]) {
+  for i in array {  //O(n)
+    print(i)
+  }
+}
+printArray(n) //1, 2, 3, 4, 5, 6
+```
+
+In the above example, as the size of the array increases, the longer the time complexity.
+
+Most common runtimes
 - n tree nodes
 - n array elements
 
@@ -83,7 +104,18 @@ This runtime is often used with Quick Sort and Merge Sort.
 
 
 ### O(n^2) - Quadratic Time
-Quadratic time is a naive solution and uses Naive sorting algorithms.
+Quadratic time is identified as having to perform linear time complexity for each value in an input, such as having nested loops.
+
+```swift
+for i in stride(from: 0, to: n, by: 1) {
+  for j in stride(from: 1, to: n, by: 1) {
+    //do constant time operations
+  }
+}
+```
+The same idea applies with each nested loop. O(n^3), O(n^4)...
+
+Quadratic time is a naive solution and uses naive sorting algorithms.
 Most common quadratic algorithms are:
 - Bubble sort
 - Selection sort
@@ -91,7 +123,7 @@ Most common quadratic algorithms are:
 
 
 ### O(2^n) - Exponential Time
-Used for backtracking/recursive problems
+Useful for backtracking/recursive problems
 - subsets
 
 
