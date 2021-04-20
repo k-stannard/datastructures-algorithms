@@ -50,8 +50,16 @@ The best trade-off is to increase the space and lower the time.
 
 ### O(1) - Constant Time
 As input gets very large, runtime stays the same.
-O(2^32)
-O(26)
+
+```
+func add(_ num1: Int, _ num2: Int) -> Int {
+  let sum = num1 + num2
+  return sum
+}
+```
+The above function is O(1). It assigns two parameters, adds them to the sum, and returns that variable. Each operation is performed once. No matter if the function is run as add(1, 2) or add(131413, 8538333), both will use the same runtime.
+
+Addition, subtraction, assignment, and most forms of basic lookup are all considered to run at constant time.
 
 ### O(log n) - Logarithmic Time
 Normally, log base 2, but it doesn't really matter.
