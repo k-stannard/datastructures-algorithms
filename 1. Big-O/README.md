@@ -100,7 +100,17 @@ Most common runtimes
 - n array elements
 
 ### O(n log n)
-This runtime is often used with Quick Sort and Merge Sort.
+Same idea as O(n) and O(log n).
+```swift
+for i in stride(from: 0, to: n, by: 1) {
+  var j = 1
+  while j < n {
+    j *= 2
+  }
+}
+```
+
+This runtime is often used with Quick Sort, Merge Sort, and Heap Sort algorithms.
 
 
 ### O(n^2) - Quadratic Time
