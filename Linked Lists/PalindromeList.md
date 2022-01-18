@@ -82,7 +82,7 @@ func reverseList(_ head: ListNode?) -> ListNode? {
     // Return the previous node for the reversed list
     return previous
 }
-
+```
 ## Notes
 
 [isPalindrome problem @ Leetcode](https://leetcode.com/problems/palindrome-linked-list/)
