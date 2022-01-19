@@ -40,5 +40,5 @@ func getIntersectionNode(_ headA: ListNode?, _ headB: ListNode?) -> ListNode? {
 
 ## Notes
 
-[Leetcode problem](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+[Leetcode problem](https://leetcode.com/problems/intersection-of-two-linked-lists/)  
 [Walkthrough by Nick White](https://www.youtube.com/watch?v=IpBfg9d4dmQ)
