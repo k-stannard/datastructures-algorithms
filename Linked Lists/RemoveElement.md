@@ -49,5 +49,32 @@ func removeElements(_ head: ListNode?, _ val: Int) -> ListNode? {
     return head!.val == val ? head!.next : head!
 }
 ```
+
+## Delete duplicate nodes in Sorted List
+### Iterative approach
+```swift
+func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+    if head == nil { return nil }
+
+    var current = head
+        
+    while current != nil {
+        if current?.val == current?.next?.val {
+            current?.next = current?.next?.next
+        } else {
+            current = current?.next
+        }
+    }
+        
+    return head
+}
+```
+### Recursive approach
+```swift
+func deleteDuplicates(_ head: ListNode?) -> ListNode? {
+    head?.next = deleteDuplicates(head?.next)
+    return head?.val == head?.next?.val ? head?.next : head
+}
+```
 ### Notes
 
