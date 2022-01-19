@@ -17,6 +17,7 @@ This repository contains my notes and examples for Data Structures & Algorithms.
 
 ### Websites
 - [Interviewcake](https://www.interviewcake.com/)
+- [Leetcode Pattern Recognition](https://medium.com/leetcode-patterns)
 
 ### Practice 
 - [Codewars](https://www.codewars.com/)
