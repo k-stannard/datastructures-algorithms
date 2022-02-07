@@ -139,6 +139,7 @@ Useful for backtracking/recursive problems
 
 ### O(n!) - N-Factorial
 
+## Notes
 
-
-For more information regarding Big-O Notation, visit https://www.bigocheatsheet.com/
+[Big O Cheat Sheet](https://www.bigocheatsheet.com/)  
+[Intro to Big O in Swift | Donny Wals](https://www.donnywals.com/an-introduction-to-big-o-in-swift/)  
